@@ -80,3 +80,15 @@
 #service .ser-whole .ser1,.ser2,.ser3{
 	margin-right:20px;
 }
+#tt{
+	height:350px;
+	
+}
+#tt table,tr,th,td{
+	border:solid 1px red;
+	border-collapse:collapse;
+}
+#tt table{
+	height:300px;
+	width:600px;
+}

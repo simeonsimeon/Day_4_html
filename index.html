@@ -50,6 +50,101 @@
 
 
 </section>
+<section id="tt">
+<div class="container">
+  <table id="ttt">
+  <tr>
+  <th>Name</th>
+  <th>Age</th>
+  <th>Year</th>
+   <th>action</th>
+  
+  </tr>
+  <tr class="tabdown">
+  
+  
+  
+  </tr>
+  <tr class="tabdown">
+  
+  
+  
+  </tr>
+  
+  
+  </table>
+  <button id="bttt">edit</button>
+<button id="delete">delete</button>
+
+</div>
+</section>
+<div style="height:300px;">
+<input type="text" placeholder="Name" id="name">
+<input type="text" placeholder="Age" id="age">
+<input type="text" placeholder="Year" id="year">
+<button id="bt">Click</button>
+
+
+
+</div>
+<script>
+
+ let bt=document.getElementById("bt");
+let gett;
+let geta;
+let gety;
+
+   let data= function(){
+   if(name.value!==""){
+    let tt=document.getElementById("ttt");
+   let tablerow=tt.insertRow(tt.length);
+   let a=this.parentNode.parentNode;
+   let cel1=tablerow.insertCell(0);
+   let cel2=tablerow.insertCell(1);
+   let cel3=tablerow.insertCell(2);
+   let cel4=tablerow.insertCell(3);
+    let name=document.getElementById("name");
+ let age=document.getElementById("age");
+ let year=document.getElementById("year");
+ 
+  gett= cel1.innerHTML=name.value;
+   geta=cel2.innerHTML=age.value;
+   gety=cel3.innerHTML=year.value;
+   
+   name.value="";
+    age.value="";
+	 year.value="";
+	 let bttt=a.getElementsByClassName("bttt")[0];
+	 cel4.innerHTML=bttt[0];
+   }
+   }
+   bt.addEventListener("click",function(){
+   
+   data();
+   
+   
+   })
+   
+   for(let i=0;i<bttt.lenght;i++){
+   bttt[i].addEventListener("click",function(){
+   gett=name.value;
+   geta=age.value;
+   gety=year.value;
+   })
+   
+   };
+    let deletee=document.getElementById("delete");
+	deletee.addEventListener("click",function(){
+	  
+   /*delete.cel1;
+   delete.cel2;
+   delete.cel3;*/
+	});
+	
+   
+   
+
+</script>
     
 </body>
 </html>
